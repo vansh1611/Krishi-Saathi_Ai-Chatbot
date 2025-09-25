@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krishi-Saathi — Farmer Q&A</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Krishi-Saathi</h1>
+      <div class="controls">
+        <select id="langSelect">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी (Hindi)</option>
+            <option value="gu">ગુજરાતી (Gujarati)</option>
+            <option value="bn">বাংলা (Bengali)</option>
+            <option value="ta">தமிழ் (Tamil)</option>
+            <option value="te">తెలుగు (Telugu)</option>
+            <option value="mr">मराठी (Marathi)</option>
+            <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            <option value="ml">മലയാളം (Malayalam)</option>
+            <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+            <option value="or">ଓଡ଼ିଆ (Odia)</option>
+        </select>
+        
+        <button id="themeToggle" title="Toggle night mode">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="chat" class="chat"></div>
+    </main>
+
+    <footer>
+      <div class="inputRow">
+        <button id="micBtn" title="Speak (may not work in all browsers)">🎤</button>
+        <input id="messageInput" type="text" placeholder="Ask about crops, soils, pests...">
+        <button id="sendBtn">Send</button>
+      </div>
+      <div id="status" class="status">Ready</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
